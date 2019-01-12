@@ -1,0 +1,59 @@
+<th:block th:fragment="header">
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a th:href="@{/}"><img th:src="@{/img/logo.png}" alt="" title="" /></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a th:href="@{/}">Home</a></li>
+                    <li class="menu-has-children"><a href="#">Genre</a>
+                        <ul>
+                            <li><a th:href="|@{/genre/{genre}(genre='Action')}|"}>Action</a></li>
+                            <li><a th:href="|@{/genre/{genre}(genre='Adventure')}|"}>Adventure</a></li>
+                            <li><a th:href="|@{/genre/{genre}(genre='Comedy')}|"}>Comedy</a></li>
+                            <li><a th:href="|@{/genre/{genre}(genre='Crime')}|"}>Crime</a></li>
+                            <li><a th:href="|@{/genre/{genre}(genre='Drama')}|"}>Drama</a></li>
+                            <li><a th:href="|@{/genre/{genre}(genre='Fantasy')}|"}>Fantasy</a></li>
+                            <li><a th:href="|@{/genre/{genre}(genre='Thriller')}|"}>Thriller</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-has-children"><a href="#">Country</a>
+                        <ul>
+                            <li><a th:href="|@{/country/{country}(country='Bulgaria')}|"}>Bulgaria</a></li>
+                            <li><a th:href="|@{/country/{country}(country='France')}|"}>France</a></li>
+                            <li><a th:href="|@{/country/{country}(country='USA')}|"}>USA</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-has-children"><a href="#">Year</a>
+                        <ul>
+                            <li><a th:href="|@{/year/{year}(year='2019')}|"}>2019</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2018')}|"}>2018</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2017')}|"}>2017</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2016')}|"}>2016</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2015')}|"}>2015</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2014')}|"}>2014</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2013')}|"}>2013</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2012')}|"}>2012</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2011')}|"}>2011</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2010')}|"}>2010</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2009')}|"}>2009</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2008')}|"}>2008</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2007')}|"}>2007</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2006')}|"}>2006</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2005')}|"}>2005</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2004')}|"}>2004</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2003')}|"}>2003</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2002')}|"}>2002</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2001')}|"}>2001</a></li>
+                            <li><a th:href="|@{/year/{year}(year='2000')}|"}>2000</a></li>
+                        </ul>
+                    </li>
+                    <li><a th:href="@{/all}">All</a></li>
+                    <li><a th:href="@{/create}"}>Add new movie</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+
+</th:block>
